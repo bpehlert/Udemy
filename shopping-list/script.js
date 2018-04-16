@@ -15,7 +15,8 @@ for ( var i = 0 ; i < listItems.length; i++) {
 // function to add delete button and event listener.
 function addDeleteButtons(parent){
 	var deleteButton = document.createElement("button");
-	deleteButton.appendChild(document.createTextNode("Delete"));
+	deleteButton.appendChild(document.createTextNode("Done"));
+	deleteButton.className = "btn btn-success";
 	deleteButton.addEventListener("click", function() {
 		this.parentNode.remove();
 	});
@@ -26,7 +27,8 @@ function addDeleteButtons(parent){
 function createListElement() {
 	var li = document.createElement("li");
 	var deleteButton = document.createElement("button");
-	deleteButton.appendChild(document.createTextNode("Delete"));
+	deleteButton.appendChild(document.createTextNode("Done"));
+	deleteButton.className = "btn btn-success";
 	li.appendChild(document.createTextNode(input.value));
 	li.appendChild(deleteButton);
 	ul.appendChild(li);
