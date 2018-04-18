@@ -1,9 +1,10 @@
+var css = document.querySelector("p");
+// css.textContent = body.style.background + ";";
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 
 color1.addEventListener("input", changeGradient)
-
 color2.addEventListener("input", changeGradient)
 
 function changeGradient(){
@@ -12,4 +13,5 @@ function changeGradient(){
     + ", "
     + color2.value
     + ")";
+    css.textContent = body.style.background + ";";
 }
