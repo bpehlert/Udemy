@@ -5,5 +5,3 @@ const double = [];
 const newArr = arr.forEach(num => {
   double.push(num * 2);
 });
-
-console.log(double);
